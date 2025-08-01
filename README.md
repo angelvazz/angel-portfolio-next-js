@@ -1,6 +1,6 @@
 # Angel Vazquez - Interactive Personal Portfolio
 
-![Portfolio Screenshot](https://placehold.co/1200/111827/ffffff?text=Portfolio+Screenshot)
+![Portfolio Screenshot](./screenshot/portfolio-screenshot.png)
 
 Welcome to the repository for my personal portfolio. This is a fully interactive website built from the ground up to showcase my skills, professional experience, and key projects as a Full Stack Developer.
 

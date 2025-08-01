@@ -1,6 +1,5 @@
 import React from "react";
 
-// Componente para un ícono de red social reutilizable
 const SocialIcon = ({
   href,
   children,
@@ -26,12 +25,11 @@ export const Footer = () => {
   return (
     <footer className="w-full bg-gray-950/50 border-t border-gray-800">
       <div className="max-w-4xl mx-auto py-12 px-6 md:px-12 text-center">
-        {/* Sección de Contacto */}
         <div id="contacto" className="mb-8">
           <h2 className="text-4xl font-bold text-white mb-4">Contact Me</h2>
           <p className="text-lg text-gray-400 max-w-xl mx-auto mb-8">
-            I'm available for new opportunities and collaborations. Feel free to
-            get in touch.
+            I&apos;m available for new opportunities and collaborations. Feel
+            free to get in touch.
           </p>
           <div className="flex justify-center items-center gap-8">
             <SocialIcon href="mailto:angel.mvazz94@gmail.com">
@@ -72,8 +70,6 @@ export const Footer = () => {
             </SocialIcon>
           </div>
         </div>
-
-        {/* Separador y Copyright */}
         <div className="border-t border-gray-800 pt-8 mt-8 flex flex-col sm:flex-row justify-between items-center text-sm text-gray-500">
           <p>&copy; {currentYear} Angel Mario Vazquez. All rights reserved.</p>
           <p className="mt-2 sm:mt-0">

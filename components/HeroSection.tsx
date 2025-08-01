@@ -2,6 +2,13 @@
 
 import React, { useState, useRef, useEffect } from "react";
 
+interface ParticleType {
+  x: number;
+  y: number;
+  size: number;
+}
+
+// Componente para una partícula individual
 const Particle = ({ style }: { style: React.CSSProperties }) => {
   return (
     <div
@@ -13,7 +20,7 @@ const Particle = ({ style }: { style: React.CSSProperties }) => {
 
 export const HeroSection = () => {
   const [mousePosition, setMousePosition] = useState({ x: -200, y: -200 });
-  const [particles, setParticles] = useState<any[]>([]);
+  const [particles, setParticles] = useState<ParticleType[]>([]);
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {

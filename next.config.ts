@@ -1,7 +1,9 @@
 /** @type {import('next').NextConfig} */
+
+const isProd = process.env.NODE_ENV === "production";
 const nextConfig = {
   output: "export",
-  basePath: "/angel-portfolio-next-js",
+  basePath: isProd ? "/angel-portfolio-next-js" : "",
   images: {
     unoptimized: true,
     dangerouslyAllowSVG: true,

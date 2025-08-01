@@ -6,21 +6,23 @@ interface Project {
   description: string;
   image: string;
   tags: string[];
+  liveUrl?: string;
+  repoUrl?: string;
 }
 
 const projects: Project[] = [
   {
-    title: "Motor de Sincronización en Tiempo Real",
+    title: "Real-Time Synchronization Engine",
     description:
-      "Sistema event-driven para sincronizar múltiples feeds de eventos de Google y Apple a gran escala, asegurando actualizaciones automáticas para los usuarios.",
-    image: "https://placehold.co/600x400/1f2937/ffffff?text=Calendarios",
+      "Event-driven system to sync multiple event feeds from Google & Apple at scale, ensuring automatic updates for users.",
+    image: "https://placehold.co/600x400/1f2937/ffffff?text=Calendar+Sync",
     tags: ["AWS", "EventBridge", "Lambda", "Node.js"],
   },
   {
-    title: "Pipeline de Monitoreo Serverless",
+    title: "Serverless Monitoring Pipeline",
     description:
-      "Solución en AWS para monitorear proactivamente los niveles de gas fees en cientos de contenedores blockchain, previniendo disrupciones con alertas en tiempo real.",
-    image: "https://placehold.co/600x400/1f2937/ffffff?text=Blockchain",
+      "Solution on AWS to proactively monitor gas fee levels in hundreds of blockchain containers, preventing disruptions with real-time alerts.",
+    image: "https://placehold.co/600x400/1f2937/ffffff?text=Blockchain+Monitor",
     tags: ["AWS", "Lambda", "Terraform", "Slack"],
   },
 ];
@@ -28,9 +30,7 @@ const projects: Project[] = [
 export const ProjectsSection = () => {
   return (
     <section id="proyectos" className="py-20">
-      <h2 className="text-4xl font-bold text-white mb-12">
-        Proyectos Destacados
-      </h2>
+      <h2 className="text-4xl font-bold text-white mb-12">Featured Projects</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {projects.map((project, index) => (
           <div
@@ -39,7 +39,7 @@ export const ProjectsSection = () => {
           >
             <Image
               src={project.image}
-              alt={`Imagen de ${project.title}`}
+              alt={`Screenshot of ${project.title}`}
               width={600}
               height={400}
               className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"

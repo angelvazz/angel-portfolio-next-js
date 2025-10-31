@@ -1,10 +1,12 @@
 import React from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
+import ChatAiImg from "@/screenshot/chat-ai.png";
+import OasisAiImg from "@/screenshot/oasis-ai.png";
 
 interface Project {
   title: string;
   description: string;
-  image: string;
+  image: StaticImageData;
   tags: string[];
   liveUrl?: string;
   repoUrl?: string;
@@ -12,18 +14,20 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "Real-Time Synchronization Engine",
+    title: "AI Chatbot Portfolio",
     description:
-      "Event-driven system to sync multiple event feeds from Google & Apple at scale, ensuring automatic updates for users.",
-    image: "https://placehold.co/600x400/1f2937/ffffff?text=Calendar+Sync",
-    tags: ["AWS", "EventBridge", "Lambda", "Node.js"],
+      "An AI-powered portfolio application built with Next.js, TypeScript, and TailwindCSS. Features a clean, modern chat interface that connects to a serverless backend, showcasing conversational AI integration and responsive UI/UX design.",
+    image: ChatAiImg,
+    tags: ["Next.js", "TypeScript", "TailwindCSS", "AI Integration"],
+    repoUrl: "https://github.com/angelvazz/ai-chatbot-portfolio",
   },
   {
-    title: "Serverless Monitoring Pipeline",
+    title: "AI Generated Oasis Project",
     description:
-      "Solution on AWS to proactively monitor gas fee levels in hundreds of blockchain containers, preventing disruptions with real-time alerts.",
-    image: "https://placehold.co/600x400/1f2937/ffffff?text=Blockchain+Monitor",
-    tags: ["AWS", "Lambda", "Terraform", "Slack"],
+      "A generative AI experience that transforms natural language prompts into immersive 3D desert environments. Developed with React and modern web technologies, focusing on real-time rendering and creative user interaction.",
+    image: OasisAiImg,
+    tags: ["React", "Three.js", "AI"],
+    repoUrl: "https://github.com/angelvazz/ai-generated-oasis-project",
   },
 ];
 
@@ -35,28 +39,50 @@ export const ProjectsSection = () => {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="bg-gray-800 rounded-lg overflow-hidden group"
+            className="relative bg-gray-800 rounded-lg overflow-hidden group hover:shadow-lg hover:shadow-gray-700/30 transition-shadow duration-300"
           >
             <Image
               src={project.image}
               alt={`Screenshot of ${project.title}`}
-              width={600}
-              height={400}
+              placeholder="blur"
               className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
             />
-            <div className="p-6">
-              <h3 className="text-2xl font-bold text-white">{project.title}</h3>
-              <p className="mt-2 text-gray-400">{project.description}</p>
-              <div className="mt-4 flex flex-wrap gap-2">
-                {project.tags.map((tag, i) => (
-                  <span
-                    key={i}
-                    className="bg-gray-700 text-xs font-semibold px-2 py-1 rounded"
-                  >
-                    {tag}
-                  </span>
-                ))}
+
+            <div className="p-6 flex flex-col h-[320px] relative">
+              {/* Contenido principal */}
+              <div className="flex-1 pr-4">
+                <h3 className="text-2xl font-bold text-white">
+                  {project.title}
+                </h3>
+                <p className="mt-2 text-gray-400 text-sm leading-relaxed break-words">
+                  {project.description}
+                </p>
+
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {project.tags.map((tag, i) => (
+                    <span
+                      key={i}
+                      className="bg-gray-700 text-xs font-semibold px-2 py-1 rounded text-gray-200"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
               </div>
+
+              {/* Botón fijo abajo a la derecha */}
+              {project.repoUrl && (
+                <div className="absolute bottom-6 right-6">
+                  <a
+                    href={project.repoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-blue-600 hover:bg-blue-500 text-white font-semibold text-sm px-4 py-2 rounded-lg transition-all duration-200 shadow-md"
+                  >
+                    🚀 View Project
+                  </a>
+                </div>
+              )}
             </div>
           </div>
         ))}

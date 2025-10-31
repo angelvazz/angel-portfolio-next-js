@@ -6,8 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Angel Mario Vazquez - Portafolio",
-  description:
-    "Portafolio de un Full Stack Developer y especialista en AWS Cloud.",
+  description: "Frontend-focused Full Stack Developer | AWS Cloud Specialist.",
 };
 
 export default function RootLayout({

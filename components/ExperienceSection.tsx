@@ -15,9 +15,10 @@ const experiences: Experience[] = [
     company: "AdvisoryCloud",
     dates: "Aug 2023 - Apr 2025",
     achievements: [
-      "Drove the full-stack implementation of new features and core platform enhancements, delivering robust serverless solutions on AWS to improve functionality and user experience.",
-      "Engineered a scalable, public-facing Next.js solution designed for over 10,000 users by implementing an on-demand page generation system in AWS.",
-      "Architected a real-time, event-driven calendar synchronization engine, enabling users to subscribe to multiple event feeds and receive automated updates from Google & Apple calendars at scale.",
+      "Redesigned and optimized React and Next.js interfaces, improving load times and user experience across core business features. Implemented performance tuning techniques like dynamic imports, memoization, and lazy loading to enhance UI responsiveness.",
+      "Developed a scalable Next.js SEO solution that automatically generated a static page for each user profile (10,000+), improving discoverability and driving measurable growth in subscription leads through higher organic visibility.",
+      "Architected a real-time calendar integration engine with Google & Apple Calendars, enabling users to automatically sync company events to their personal calendars, ensuring instant updates on schedule changes and new events.",
+      "Collaborated across product and engineering teams to implement serverless AWS solutions (Lambda, EventBridge, DynamoDB, S3), reducing infrastructure costs while scaling efficiently.",
     ],
   },
   {
@@ -25,9 +26,11 @@ const experiences: Experience[] = [
     company: "ORIGYN Foundation",
     dates: "Sep 2022 - Oct 2023",
     achievements: [
-      "Developed end-to-end Decentralized Applications (DApps) using React.js and TypeScript for the frontend and Motoko for the backend.",
-      "Engineered a serverless monitoring pipeline on AWS using Lambda and Terraform to proactively prevent DApp service disruptions.",
-      "Successfully migrated the entire monitoring solution from its serverless AWS architecture to a monolithic on-premise Express.js application.",
+      "Developed and deployed multiple Decentralized Applications (DApps) with React.js, TypeScript and Jest, integrating with Motoko-based blockchain backends to enable seamless, real-time user interaction with digital assets.",
+      "Built an automated asset monitoring pipeline on AWS (Lambda, Terraform, MongoDB, GitHub Actions CI/CD) that tracked blockchain gas levels across hundreds of NFTs and DApps, sending proactive Slack alerts to prevent costly service interruptions.",
+      "Reduced downtime of blockchain assets by eliminating unexpected expirations, ensuring business continuity and safeguarding user transactions.",
+      "Re-engineered the monitoring solution as an on-premise microservice with Express.js and Docker, cutting ongoing cloud infrastructure costs by 100% while retaining full real-time monitoring and alerting functionality.",
+      "Collaborated cross-functionally with DevOps and product teams to integrate monitoring into existing workflows, improving system reliability and stakeholder visibility.",
     ],
   },
   {
@@ -35,8 +38,10 @@ const experiences: Experience[] = [
     company: "B-MORE",
     dates: "Jul 2022 - Sep 2022",
     achievements: [
-      "Spearheaded the project's strategic planning by conducting a deep architectural analysis and collaborating directly with clients and PMs.",
-      "Led the hands-on re-engineering of the application with modern React, delivering the full project in just 3 months—50% ahead of schedule.",
+      "Revitalized a failing client–supplier platform by re-architecting its React codebase with modern best practices, transforming an unstable product into a fully functional application.",
+      "Partnered directly with clients and PMs to identify root causes of system failures, translate business needs into actionable technical requirements, and build a clear roadmap with milestones and deliverables.",
+      "Delivered the project in 3 months—50% ahead of schedule, meeting all functional requirements while significantly improving performance, maintainability, and scalability.",
+      "Mentored developers on React standards and reusable component design, ensuring long-term sustainability and reducing future technical debt.",
     ],
   },
   {
@@ -44,8 +49,10 @@ const experiences: Experience[] = [
     company: "PideDirecto",
     dates: "Mar 2022 - Jul 2022",
     achievements: [
-      "Owned the entire mobile product lifecycle for a portfolio of 15+ white-label applications for both iOS and Android.",
-      "Spearheaded the complete, full-stack redesign of a key client's application, re-engineering the UI in React Native and the serverless backend on AWS Lambda.",
+      "Led the end-to-end lifecycle of 15+ white-label mobile apps built with React Native, customizing features per client requests and managing successful deployments to both the Apple App Store and Google Play Store.",
+      "Redesigned and modernized the UI/UX of a flagship restaurant application, improving usability and customer satisfaction, while integrating improments in serverless backend on AWS Lambda and Node.js to power critical APIs (order processing, authentication).",
+      "Enhanced core platform functionality across frontend and backend, delivering faster response times, reducing bugs, and ensuring smooth adoption by new clients.",
+      "Collaborated with clients to translate business needs into technical features, accelerating time-to-market for custom solutions.",
     ],
   },
   {
@@ -53,8 +60,10 @@ const experiences: Experience[] = [
     company: "Suministros Tridan",
     dates: "Dic 2020 - Nov 2021",
     achievements: [
-      "Co-developed a dual-function business platform from the ground up, featuring a public e-commerce site (React.js) and an integrated back-office system (Node.js/Express.js).",
-      "Implemented critical full-stack features such as secure payment gateway integrations and product management systems.",
+      "Contributed to the design and development of a dual-purpose business platform, combining a customer-facing e-commerce site and an internal dashboard for inventory and analytics, built with React.js, Redux, Node.js, and PostgreSQL.",
+      "Implemented and optimized key frontend features such as secure payment flows, product management interfaces, and real-time analytics dashboards, improving usability and visual clarity for both clients and staff.",
+      "Refactored React components and improved state management, enhancing UI responsiveness and reducing frontend-related errors reported by users.",
+      "Collaborated with designers and backend developers to deliver new features on schedule, ensuring consistent UX across both the public and internal applications.",
     ],
   },
 ];

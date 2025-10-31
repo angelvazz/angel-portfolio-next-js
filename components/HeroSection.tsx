@@ -112,9 +112,12 @@ export const HeroSection = () => {
           Full Stack Developer | AWS Cloud Specialist
         </h2>
         <p className="mt-6 text-lg max-w-2xl text-gray-400 mx-auto">
-          Full Stack Developer focused on transforming business requirements
-          into high-impact, scalable solutions. Specialist in serverless AWS and
-          Terraform, with a proven ability to deliver complex projects.
+          Frontend-focused Full Stack Developer with 5+ years of experience
+          building scalable, high-performance web applications. Strong expertise
+          in React, Next.js, and UI/UX development — delivering intuitive,
+          performant interfaces that enhance user experience. Skilled at
+          integrating AWS serverless backends with Terraform to create
+          maintainable, cost-optimized systems end-to-end.
         </p>
         <a
           href="/angel-portfolio-next-js/#proyectos"

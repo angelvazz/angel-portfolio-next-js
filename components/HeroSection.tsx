@@ -109,15 +109,10 @@ export const HeroSection = () => {
           Angel Mario Vazquez
         </h1>
         <h2 className="text-2xl md:text-3xl font-semibold text-blue-400 mt-2">
-          Full Stack Developer | AWS Cloud Specialist
+          Full Stack Developer
         </h2>
         <p className="mt-6 text-lg max-w-2xl text-gray-400 mx-auto">
-          Frontend-focused Full Stack Developer with 5+ years of experience
-          building scalable, high-performance web applications. Strong expertise
-          in React, Next.js, and UI/UX development — delivering intuitive,
-          performant interfaces that enhance user experience. Skilled at
-          integrating AWS serverless backends with Terraform to create
-          maintainable, cost-optimized systems end-to-end.
+        Full Stack Engineer with 6+ years of experience building enterprise-grade cloud applications. Experienced in AWS serverless and containerized architectures (ECS), SQL-based backend systems, and scalable frontend design using React and TypeScript. Strong background in cloud-native solutions, system modernization, and high-precision financial workflows.
         </p>
         <a
           href="/angel-portfolio-next-js/#proyectos"

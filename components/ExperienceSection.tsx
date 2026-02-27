@@ -12,8 +12,25 @@ interface Experience {
 const experiences: Experience[] = [
   {
     title: "Full Stack Developer",
+    company: "Blue People",
+    dates: "Nov 2025 - Current",
+    achievements: [
+      "Project 1 – Enterprise Inquiry & Document Management Platform",
+      "Led frontend development across two interconnected enterprise applications using React and TypeScript, ensuring seamless integration, shared authentication flows, and consistent user experience. Designed modular UI components and implemented secure role-based workflows for document lifecycle management and inquiry processing.",
+     "Contributed to backend development within a serverless AWS architecture (Lambda, API Gateway, DynamoDB, S3) by building and extending APIs, developing functional modules, and collaborating on architectural decisions. Integrated secure authentication via Amazon Cognito and Microsoft Entra ID (SSO/SAML) and supported production-ready cloud deployments following AWS best practices.",
+      
+      
+      
+      "Project 2 – Enterprise Land & Asset Management System",
+      "Leading frontend development for the modernization of a complex land and asset management platform, building a new UI layer in React and TypeScript to replace legacy server-rendered views. Responsible for designing scalable frontend architecture, integrating real-time features, and ensuring seamless communication with backend services.",
+      "Collaborating on the transition to a containerized AWS infrastructure (Docker + ECS), contributing architectural proposals and developing backend modules and APIs required to support frontend functionality. Working closely with infrastructure and backend teams to ensure proper API contracts, SQL integration, and system stability within a cloud-native environment.",
+      
+        ],
+  },
+  {
+    title: "Full Stack Developer",
     company: "AdvisoryCloud",
-    dates: "Aug 2023 - Apr 2025",
+    dates: "Aug 2023 - Sep 2025",
     achievements: [
       "Redesigned and optimized React and Next.js interfaces, improving load times and user experience across core business features. Implemented performance tuning techniques like dynamic imports, memoization, and lazy loading to enhance UI responsiveness.",
       "Developed a scalable Next.js SEO solution that automatically generated a static page for each user profile (10,000+), improving discoverability and driving measurable growth in subscription leads through higher organic visibility.",
